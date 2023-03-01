@@ -23,7 +23,7 @@ describe("Site 999.md", () => {
     // })
 
 
-    //  Test3
+    //  Test 3
 
     //  it('Verificam daca butonul "Facebook" din Footer, are o anumita valoare din input', () => {
     //     cy.visit('https://999.md/ro');
@@ -35,30 +35,29 @@ describe("Site 999.md", () => {
     //     cy.get('[href="https://www.facebook.com/www999md/"]');                         
     //     const classFB = cy.get('[href="https://www.facebook.com/www999md/"]');
     //     classFB.should('have.class', 'is-fb');
-    })
+    // })
 
 
+    // Test 4
+     
+    // it('Verificare continut URL', () =>{
+    //     cy.visit('https://999.md/ro/category/transport');
+    //     cy.url().should('include','/transport');
 
+// })
 
+    // Test 5
 
+    it('Test cu delay', () =>{
+        cy.visit('https://999.md/ro/');
+        cy.get('#js-search-input').type('apple');
+        cy.wait(10000);
+        cy.get('.header__search__button').type('{enter} ');
+        cy.get('#js-search-input').clear();
+    
+    })  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Test Screenshot
+   
 
 
 
